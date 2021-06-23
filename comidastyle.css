@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("pratoitalia.jpg");
+    background-color: #4d4b4b55;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: right top;
+    display: flex;
+}
+
+header{
+    /* background-color: #575656aa; */
+    height: 120px;
+    width: 2000px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.logo img{
+    width: 100px;
+    filter: brightness(100);
+}
+
+.links ul {
+    display: flex;
+    gap: 20px;
+    color: white; 
+    list-style-type: none;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-family: 20px;
+    user-select: none;
+    transition: all 1s;
+}
+
+.links a:hover {
+    color: rgb(145, 35, 16);
+}
+
+/* .div {
+    position: absolute;
+    width: 60px;
+    top: 90vh;
+    left: 90vw;
+    filter: brightness(10%);
+} */
+
+/* .div {
+    filter: brightness(0);
+} */
+
+<style>
+ 		p{
+ 			font-size:26px;
+ 		}
+ 
+ 		svg{
+ 			display: inline-block;
+ 			font-size: inherit;
+ 			height: 1em;
+ 			overflow: visible;
+ 			vertical-align: -.125em;
+ 		}
+ 	</style>
