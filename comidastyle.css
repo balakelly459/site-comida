@@ -13,6 +13,7 @@ body{
     background-size: cover;
     background-position: right top;
     display: flex;
+    overflow-x: hidden;
 }
 
 header{
@@ -26,8 +27,13 @@ header{
 }
 
 .logo img{
-    width: 100px;
+    width: 95px;
     filter: brightness(100);
+    display: block;
+	left:50%;
+	top:50%;
+    margin-left: -4px;
+    margin-top: -25px;
 }
 
 .links ul {
@@ -35,6 +41,8 @@ header{
     gap: 20px;
     color: white; 
     list-style-type: none;
+    position:fixed;
+    left: 35%;
 }
 
 .links a{
@@ -42,12 +50,13 @@ header{
     text-decoration: none;
     font-family: 20px;
     user-select: none;
-    transition: all 1s;
+    transition: all 0,5s;
 }
 
 .links a:hover {
-    color: rgb(145, 35, 16);
+    color: rgb(233, 160, 66);
 }
+
 
 /* .div {
     position: absolute;
@@ -67,10 +76,71 @@ style
  		}
  
  		svg{
- 			display: inline-block;
+ 			display:inline-block;
  			font-size: inherit;
  			height: 1em;
  			overflow: visible;
  			vertical-align: -.125em;
+            color: white;
  		}
-    
+
+
+main{
+    padding:  20vh 10vw;
+    flex-grow: 1;
+    color: white;
+    align-items: center;
+    position:absolute;
+    display: block;
+	left:50%;
+	top:50%;
+    margin-left: -675px;
+    margin-top: -270px;
+}
+
+main h2{
+    font-size: 30px;
+    font-family: 'Thasadith', sans-serif;
+    color: rgb(233, 160, 66);
+}
+
+main h1{
+    font-size: 70px;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+main a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    background-color: #000000AA;
+    margin-top: 50px;
+    border-radius: 9px;
+    user-select: none;
+    transition: all .3s;
+    display:inline;
+    float:left;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+main a:hover{
+    border: solid 1px rgb(95, 94, 91);
+    background-color: rgb(238, 120, 66);
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    color: white;
+    left:45%;
+	top:95%;
+}
